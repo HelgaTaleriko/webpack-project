@@ -1,7 +1,7 @@
 {
   "name": "web-last-block",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.9.0",
+  "description": "Webpack Final Project",
   "keywords": [
     "web",
     "scss",
@@ -10,7 +10,7 @@
     "webpack"
   ],
   "license": "ISC",
-  "author": "Kata Academy",
+  "author": "Helga",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
@@ -53,5 +53,8 @@
     "plugins": {
       "autoprefixer": {}
     }
+  },
+  "dependencies": {
+    "swiper": "^9.1.1"
   }
 }
