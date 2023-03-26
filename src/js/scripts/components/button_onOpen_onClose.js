@@ -79,7 +79,7 @@ export function openChatMobile() {
       mainContent.className="main-content";
 
     });
-};
+}
 
 
 export function openCallAboutUs() {
