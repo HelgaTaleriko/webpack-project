@@ -1,3 +1,2 @@
 import '../scss/style.scss'
-
-console.log('Works!')
+import * as func from './scripts/button_onOpen_onClose'
