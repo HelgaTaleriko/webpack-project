@@ -78,12 +78,12 @@
         <div class="footer-mobile__group">
           <div class="footer-mobile__icon">
             <button class="icon icon-call mobile-menu__call"
-                    onclick="openCallMobile()">
+                    onclick="func.openCallMobile()">
             </button>
           </div>
           <div class="footer-mobile__icon">
             <button class="icon icon-chat mobile-menu__chat"
-                    onclick="openChatMobile()">
+                    onclick="func.openChatMobile()">
             </button>
           </div>
           <div class="footer-mobile__icon">
@@ -133,11 +133,10 @@
               <img src="img/svg/Group.svg">
             </a>
 
-            <button class="icon icon-call menu__btn_call"
-                    onclick="openCallAboutUs()">
+            <button class="icon icon-call menu__btn_call">
             </button>
 
-            <button class="menu__btn_chat icon icon-chat" onclick="openChatAboutUs()">
+            <button class="menu__btn_chat icon icon-chat">
             </button>
 
             <button class="menu__btn_profile icon icon-profile">
@@ -211,7 +210,7 @@
                 </p>
               </div>
               <div class="read-more">
-                <button class="read-more__btn" id="btnMore" onclick="readMore()"  >
+                <button class="read-more__btn" id="btnMore" onclick="func.readMore()"  >
                   Читать далее
                 </button>
               </div>
@@ -340,7 +339,7 @@
           </div>
           <div class="button">
             <button class="button__brands"
-                    onclick="upDownBrands()">
+                    onclick="func.upDownBrands()">
               Показать все
             </button>
 
@@ -418,7 +417,7 @@
             </div>
           </div>
           <div class="button">
-            <button class="button__tech" onclick="upDownTech()">
+            <button class="button__tech" onclick="func.upDownTech()">
               Показать все
             </button>
           </div>
@@ -433,11 +432,6 @@
                       </span>
         </div>
         <div class="price-main">
-          <div class="price-title">
-            <span class="price-title__service">Ремонтные услуги</span>
-            <span class="price-title__cash">Цена</span>
-            <span class="price-title__time">Срок</span>
-          </div>
           <div class="slider-container">
             <div class="price-container swiper-container" id="brands1">
               <div class="price-wrapper swiper-wrapper">
@@ -624,8 +618,6 @@
       </div>
 
     </aside>
-<!--    <script  src='./src/js/index.js'></script>-->
-<!--    <script src='./src/js/button_onOpen_onClose.js'></script>-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
   </body>

@@ -15,6 +15,26 @@ export function readMore() {
     btnMore.className = "read-more__btn up";
   }
 }
+export function openCallMobile() {
+  const callButton = document.querySelector(".mobile-menu__call")
+  const call = document.querySelector('.call')
+  const closeButton = document.querySelector(".call__icon_close")
+  const mainContent=document.querySelector('.main-content')
+
+  callButton.addEventListener('click', () => {
+    call.className = "call open";
+    mainContent.className="main-content blur";
+  });
+  closeButton.addEventListener('click', () => {
+    console.log('Clicked closeButton')
+
+    call.className = "call";
+    mainContent.className="main-content";
+
+  });
+
+
+}
 export function upDownBrands() {
   const onOpenClose = document.querySelector('.button__brands')
   const brandsMain = document.querySelector('.brands__more')
@@ -43,32 +63,45 @@ export function upDownTech() {
   }
 }
 
-export function openCallMobile() {
-  const callButton = document.querySelector(".mobile-menu__call")
-  const call = document.querySelector('.call')
-  callButton.addEventListener('click', () => {
-    call.classList.add('open');
-  });
-}
+
 
 export function openChatMobile() {
   const callButton = document.querySelector(".mobile-menu__chat")
   const call = document.querySelector('.feedback')
+  const closeButton = document.querySelector(".icon_close")
+  const mainContent=document.querySelector('.main-content')
+
   callButton.addEventListener('click', () => {
-    call.classList.add('open');
-  });
-}
+    call.className = "feedback open";
+    mainContent.className="main-content blur"});
+  closeButton.addEventListener('click', () => {
+      call.className = "feedback";
+      mainContent.className="main-content";
+
+    });
+};
+
 
 export function openCallAboutUs() {
   const callButton = document.querySelector(".menu__btn_call")
   const call = document.querySelector('.call')
   const closeButton = document.querySelector(".call__icon_close")
+  const mainContent=document.querySelector('.main-content')
+  console.log('Clicked openCallAboutUs')
+
 
   callButton.addEventListener('click', () => {
+    console.log('Clicked callButton')
+
     call.className = "call open";
+    mainContent.className="main-content blur";
   });
   closeButton.addEventListener('click', () => {
+    console.log('Clicked closeButton')
+
     call.className = "call";
+    mainContent.className="main-content";
+
   });
 }
 
@@ -76,11 +109,15 @@ export function openChatAboutUs() {
   const chatButton = document.querySelector(".menu__btn_chat")
   const call = document.querySelector('.feedback')
   const closeButton = document.querySelector(".feedback__icon_close")
+  const mainContent=document.querySelector('.main-content')
+
 
   chatButton.addEventListener('click', () => {
     call.className = "feedback open";
+    mainContent.className="main-content blur";
   });
   closeButton.addEventListener('click', () => {
     call.className = "feedback";
+    mainContent.className="main-content";
   });
 }

@@ -1,5 +1,8 @@
-// swipep 320
-new Swiper('.swiper-container', {
+import Swiper, { Navigation, Pagination } from 'swiper'
+
+function sliderInit() {
+  const swiper = new Swiper('.swiper-container', {
+    modules: [Navigation, Pagination],
     freeMode:true,
     speed:800,
     keyboard:{
@@ -27,4 +30,6 @@ new Swiper('.swiper-container', {
             enabled: false,
         },
     },
-});
+})};
+
+export default sliderInit
