@@ -1,7 +1,7 @@
 import Swiper, { Navigation, Pagination } from 'swiper'
 
-function sliderInit() {
-  const swiper = new Swiper('.swiper-container', {
+ function sliderInit() {
+  new Swiper('.swiper-container', {
     modules: [Navigation, Pagination],
     freeMode:true,
     speed:800,
@@ -30,6 +30,5 @@ function sliderInit() {
             enabled: false,
         },
     },
-})};
+})}
 
-export default sliderInit

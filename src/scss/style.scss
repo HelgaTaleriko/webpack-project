@@ -335,18 +335,16 @@ textarea:focus {
   -ms-flex-pack: distribute;
   justify-content: space-around;
 }
-
 .main-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  max-height: 400px;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 20px;
 }
-
 p {
   font-family: "TT Lakes Regular";
   font-size: 14px;
@@ -354,7 +352,9 @@ p {
   margin: 0;
   letter-spacing: 0.2px;
   color: #1B1C21;
+
 }
+
 
 /*Читать далее-------------------*/
 .read-more {
@@ -366,7 +366,6 @@ p {
   margin-left: 16px;
   margin-bottom: 16px;
 }
-
 .read-more__btn {
   padding: 0;
   font-family: "TT Lakes Regular";
@@ -408,9 +407,10 @@ p {
     overflow: hidden;
     height: auto;
     margin: 24px 16px 16px 16px;
+
   }
   #more {
-    display: none;
+    display:none;
   }
 }
 /*-----------------768px----------------------------*/
@@ -431,9 +431,12 @@ p {
     width: 312px;
     height: auto;
     margin-top: 0;
+
   }
   .container-main__img {
     width: 360px;
+    height: 230px ;
+
   }
 }
 /*-----------------1120px---------------------------*/
@@ -457,9 +460,11 @@ p {
   }
   .main-text p {
     font-size: 17px;
+
   }
   .container-main__img {
     width: 50%;
+    height: 50%;
   }
   .link {
     -ms-flex-wrap: wrap;
@@ -602,9 +607,11 @@ p {
 }
 
 /* ----------------------БРЕНДЫ МАКЕТ 1.5--------------------*/
-span {
-  font-family: "TT Lakes Regular";
+h3{
+ font-weight: normal;
+  margin: 0;
 }
+
 
 .brands,
 .tech,
@@ -676,7 +683,7 @@ span {
   align-items: center;
 }
 
-.tech-slide span {
+.tech-slide__title {
   font-family: "TT Lakes Regular";
   font-size: 16px;
   width: 30px;
@@ -695,6 +702,22 @@ span {
 
 .swiper-pagination-bullet-active {
   background-color: #B5B6BC;
+}
+.icon-go{
+  width: 35px;
+  height: 35px;
+  border: 2px solid #FF3E79;
+  border-radius: 20px;
+}
+.icon-go__arrow{
+  border: solid #FF3E79;
+  border-radius: 2px;
+  width: 10px;
+  height: 10px;
+  margin: 10px 8px;
+  border-width: 0 3px 3px 0;
+  display:inline-block;
+  transform: rotate(-45deg);
 }
 
 .button__brands,
@@ -764,13 +787,34 @@ span {
   display: -ms-flexbox;
   display: flex;
 }
+.price-card__order{
+  background-color: #FF3E79;
+  border-radius: 16px;
+  width: 100px;
+  height: 32px;
+}
+.price-card__arrow{
+  border: solid #FFFFFF;
+  border-radius: 2px;
+  width: 7px;
+  height: 7px;
+  border-width: 0 3px 3px 0;
+  display:inline-block;
+  transform: rotate(-45deg);
+}
+.price-card__order-text{
+  color: #FFFFFF;
+  font-family: "TT Lakes Bold";
+  font-size: 11px;
+  text-transform: uppercase;
 
-
+}
 
 .price-card-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "TT Lakes Regular";
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -875,7 +919,10 @@ span {
   display: none;
   height: 100%;
 }
-
+.call span,
+.feedback span{
+  font-family: "TT Lakes Regular";
+}
 .call__title,
 .feedback__title {
   font-family: "TT Lakes Bold";
@@ -913,7 +960,7 @@ span {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 440px;
-  min-height: 100%;
+  min-height: 100vw;
   border-left: 1px solid #D9FFF5;
   background: #FFFFFF;
 }
@@ -933,6 +980,10 @@ span {
 
 .send {
   margin-left: auto;
+  width: 110px;
+  height: 30px;
+  background-color: #FF3E79;
+  border-radius: 16px;
 }
 
 .call-main__text a {
@@ -953,7 +1004,6 @@ span {
 .open {
   display: block;
   position: absolute;
-
   top: 0;
   right: 0;
   z-index: 200;
