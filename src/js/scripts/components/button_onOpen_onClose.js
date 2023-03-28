@@ -98,11 +98,10 @@ export function openCallAboutUs() {
   });
   closeButton.addEventListener('click', () => {
     console.log('Clicked closeButton')
-
     call.className = "call";
     mainContent.className="main-content";
-
   });
+
 }
 
 export function openChatAboutUs() {
